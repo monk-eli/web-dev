@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="fullpage.js"></script>
+    <script src="js/loadTime.js"></script>
     <title>ecmo.stash</title>
 </head>
 <body>
@@ -24,16 +24,25 @@
             </div>
         </div>
     </div>
+</div>
+<main>
     <div class="main-box">
         <div class="menu-container">
             <div class="logo-container">
                 <img src="images/logo.svg" alt="logo"/>
             </div>
             <div class="button-container">
-                <button type="button">cv</button>
-                <button type="button">music</button>
-                <button type="button">contacts</button>
+                <a href="images/cv.pdf">
+                    <button type="button">cv</button>
+                </a>
+                <a href="music.html">
+                    <button type="button">music</button>
+                </a>
+                <a href="contacts.html">
+                    <button type="button">contacts</button>
+                </a>
             </div>
+            <div id="scroll-button-container"></div>
         </div>
         <div class="artwork-container">
             <img src="images/artwork.jpg" alt="artwork"/>
@@ -45,20 +54,41 @@
             \___/\___/_/ /_/ /_/\____/   \___/\___/_/ /_/ /_/\____/   \___/\___/_/ /_/ /_/\____/   \___/\___/_/ /_/ /_/\____/   \___/\___/_/ /_/ /_/\____/   \___/\___/_/ /_/ /_/\____/
         </pre>
     </div>
-</div>
-<main>
-    <div class="gallery">
-        GALLERY HERE
-        <ul>
-            <li>Photo 1</li>
-            <li><b>Photo 2</b></li>
-            <li><i>Photo 3</i></li>
-            <li>Photo 4</li>
-        </ul>
+    <div class="gallery-container">
+        <div class="gallery">
+            <div class="view overlay hm-black-light gallery-item">
+                <img src="images/gallery/gallery6.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="view overlay hm-black-light gallery-item">
+                <img src="images/gallery/gallery3.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="view overlay hm-black-light gallery-item">
+                <img src="images/gallery/gallery2.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="view overlay hm-black-light gallery-item">
+                <img src="images/gallery/gallery4.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="view overlay hm-black-light gallery-item">
+                <img src="images/gallery/gallery1.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="view overlay hm-black-light gallery-item">
+                <img src="images/gallery/gallery5.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="view overlay hm-black-light gallery-item">
+                <img src="images/gallery/gallery7.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="view overlay hm-black-light gallery-item">
+                <img src="images/gallery/gallery8.jpg" class="img-fluid" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="footer-container">ecmo inc.
+        all rights reserved
+        <span class="pageLoadTime"></span>
     </div>
 </main>
-<!--<footer>-->
-<!--    <div class="footer-container">FOOTER HERE</div>-->
-<!--</footer>-->
+<!--<script src="/js/loadTime.js"></script>-->
+<script src="js/scrollDown.js"></script>
+
 </body>
 </html>

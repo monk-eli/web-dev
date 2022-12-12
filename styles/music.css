@@ -19,20 +19,36 @@ body {
     height: 4.5vh;
 }
 
-.contacts-container {
-    margin-top: 4vh;
-    text-align: center;
-    color: #ff2079;
+.links-container {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.contact {
+.links-container button {
+    flex: 1 1 auto;
+    color: black;
+    text-align: center;
     font-size: 2vh;
+    font-style: normal;
+    height: 4vh;
+    width: 100%;
+    border: none;
+    background-color: #424242;
+}
+
+.links-container button:hover {
+    transition: 0.1s;
+    color: #ff2079;
 }
 
 .image-container {
     margin-top: 10vh;
     display: flex;
     align-items: center;
+
 }
 
 .image {
