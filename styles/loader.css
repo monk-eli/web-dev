@@ -1,0 +1,17 @@
+
+#pre-loader {
+    display: block;
+    animation: is-rotating 1s infinite;
+    margin: auto auto auto auto;
+    border: 6px solid black;
+    border-radius: 50%;
+    border-top-color: #ff2079;
+    height: 50px;
+    width: 50px;
+}
+
+@keyframes is-rotating {
+    to {
+        transform: rotate(1turn);
+    }
+}

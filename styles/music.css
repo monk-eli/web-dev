@@ -62,9 +62,93 @@ body {
     margin-right: auto;
 }
 
+.submit-container {
+    color: #ff2079;
+    padding: 15px;
+    text-align: center;
+    margin: 5vh auto 5vh;
+    background: black;
+    border-radius: 10px;
+    min-width: 450px;
+    position: relative;
+    min-height: 100px;
+    max-width: 50%;
+}
+
+#new-track {
+    position: relative;
+    padding: 30px 20px;
+}
+
+#push-field {
+    width: 75%;
+    height: 45px;
+    padding: 12px;
+    color: #111111;
+    font-weight: 500;
+    border-radius: 5px;
+    font-size: 15px;
+    border: 2px solid #d1d3d4;
+}
+
+#push-field:focus {
+    outline: none;
+    border-color: #ff2079;
+}
+
+#push {
+    float: right;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #ff2079;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+    width: 20%;
+    height: 45px;
+    border-radius: 5px;
+}
+
+#track-list {
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+    background-color: black;
+    padding: 30px 20px;
+    margin-top: 10px;
+}
+
+.track {
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #939697;
+    background-color: white;
+    height: 50px;
+    margin-bottom: 8px;
+    padding: 5px 10px;
+    display: flex;
+    color: black;
+}
+
+.track span {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.track button {
+    background-color: #ff2079;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    height: 100%;
+    width: 40px;
+    border-radius: 5px;
+}
+
 .footer-container {
-    position: absolute;
-    bottom: 0;
     padding: 0;
     margin: 0;
     height: 5vh;

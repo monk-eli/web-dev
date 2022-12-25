@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>ecmo.music</title>
     <link href="styles/music.css" rel="stylesheet">
+
 </head>
 <body>
 <div class="header">
@@ -27,8 +28,19 @@
         </a>
     </div>
 </div>
+<div class="submit-container" id="submit-container">
+    Submit your tracks here!
+    <form id="submit-track-form">
+        <div id="new-track">
+            <input type="text" id="push-field" placeholder="Portishead - Strangers">
+            <input type="submit" id="push" value="Submit">
+        </div>
+    </form>
+<!--    <div id="track-list"></div>-->
+</div>
 <div class="footer-container">ecmo inc.
     all rights reserved
 </div>
+<script src="js/submitTrackForm.js"></script>
 </body>
 </html>

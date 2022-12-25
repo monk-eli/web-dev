@@ -6,7 +6,7 @@
 
 body {
     margin: 0;
-    background-color: #04005e;
+    background-color: black;
     color: white;
     font-family: "IBM Plex Sans", serif;
 }
@@ -130,7 +130,7 @@ pre {
 }
 
 .gallery {
-    display: grid;
+    display: none;
     max-width: 100%;
     /*margin: 0 auto;*/
     grid-gap: 0;
@@ -188,4 +188,18 @@ pre {
 #scroll-btn:hover {
     transition: 0.1s;
     color: #ff2079;
+}
+
+#error-handle {
+    display: none;
+    margin: 5vh auto 5vh auto;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    color: #ff2079;
+}
+
+#error-handle img {
+    max-width: 15vh;
+    max-height: 15vh;
 }

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link href="styles/index.css" rel="stylesheet">
     <link href="styles/ticker.css" rel="stylesheet">
+    <link href="styles/loader.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
@@ -54,41 +55,20 @@
             \___/\___/_/ /_/ /_/\____/   \___/\___/_/ /_/ /_/\____/   \___/\___/_/ /_/ /_/\____/   \___/\___/_/ /_/ /_/\____/   \___/\___/_/ /_/ /_/\____/   \___/\___/_/ /_/ /_/\____/
         </pre>
     </div>
-    <div class="gallery-container">
-        <div class="gallery">
-            <div class="view overlay hm-black-light gallery-item">
-                <img src="images/gallery/gallery6.jpg" class="img-fluid" alt="">
-            </div>
-            <div class="view overlay hm-black-light gallery-item">
-                <img src="images/gallery/gallery3.jpg" class="img-fluid" alt="">
-            </div>
-            <div class="view overlay hm-black-light gallery-item">
-                <img src="images/gallery/gallery2.jpg" class="img-fluid" alt="">
-            </div>
-            <div class="view overlay hm-black-light gallery-item">
-                <img src="images/gallery/gallery4.jpg" class="img-fluid" alt="">
-            </div>
-            <div class="view overlay hm-black-light gallery-item">
-                <img src="images/gallery/gallery1.jpg" class="img-fluid" alt="">
-            </div>
-            <div class="view overlay hm-black-light gallery-item">
-                <img src="images/gallery/gallery5.jpg" class="img-fluid" alt="">
-            </div>
-            <div class="view overlay hm-black-light gallery-item">
-                <img src="images/gallery/gallery7.jpg" class="img-fluid" alt="">
-            </div>
-            <div class="view overlay hm-black-light gallery-item">
-                <img src="images/gallery/gallery8.jpg" class="img-fluid" alt="">
-            </div>
-        </div>
+    <div id="gallery_container" class="gallery-container">
+        <div id="gallery" class="gallery"></div>
+    </div>
+    <div id="pre-loader"></div>
+    <div id="error-handle">
+        Decepticons were here ⚠
+        <img src="images/decepticon-error.svg" alt="artwork"/>
     </div>
     <div class="footer-container">ecmo inc.
         all rights reserved
         <span class="pageLoadTime"></span>
     </div>
 </main>
-<!--<script src="/js/loadTime.js"></script>-->
 <script src="js/scrollDown.js"></script>
-
+<script src="js/loadGallery.js"></script>
 </body>
 </html>
