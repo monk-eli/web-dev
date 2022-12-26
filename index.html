@@ -9,6 +9,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
     <script src="js/loadTime.js"></script>
+<!--    Подключение библиотеки swiper.js с CDN-->
+    <link
+            href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+            rel="stylesheet"
+    />
     <title>ecmo.stash</title>
 </head>
 <body>
@@ -45,8 +50,19 @@
             </div>
             <div id="scroll-button-container"></div>
         </div>
-        <div class="artwork-container">
-            <img src="images/artwork.jpg" alt="artwork"/>
+<!--        Базовая разметка для компонентов, работающих со swiper.js-->
+        <div class="swiper-container">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/artwork1.jpg" alt="artwork"/>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/artwork2.jpg" alt="artwork"/>
+                </div>
+            </div>
+
         </div>
         <pre>
               ___  _________ ___  ____     ___  _________ ___  ____     ___  _________ ___  ____     ___  _________ ___  ____     ___  _________ ___  ____     ___  _________ ___  ____
@@ -68,6 +84,8 @@
         <span class="pageLoadTime"></span>
     </div>
 </main>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/artworkSwiper.js"></script>
 <script src="js/scrollDown.js"></script>
 <script src="js/loadGallery.js"></script>
 </body>
